@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#6A1B3A">
+  <meta name="description" content="Discover distinctive luxury and niche fragrances. Rare scents. Real bottles.">
+  <title>ORU PERFUMES — Rare scents. Real bottles.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Jost:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="announcement">COMPLIMENTARY DELIVERY ON ORDERS ABOVE ₦250,000 <span>·</span> NATIONWIDE DELIVERY</div>
+  <nav class="navbar navbar-expand-lg navbar-light oru-nav sticky-top">
+    <div class="container-xl">
+      <a class="navbar-brand" href="#"><span class="brand-mark">ORU</span><small>PERFUMES</small></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#shop">Shop all</a></li>
+          <li class="nav-item"><a class="nav-link" href="brands.html">Fragrance houses</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Our standard</a></li>
+          <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions"><button class="icon-btn" aria-label="Search" onclick="document.getElementById('shopSearch').focus()">⌕</button><a class="icon-btn" href="account.html" aria-label="Account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.5 4-6.5 8-6.5s7 2 8 6.5"/></svg></a><button class="icon-btn" id="wishBtn" aria-label="Show saved fragrances">♡ <span class="bag-count" id="wishCount">0</span></button><button class="icon-btn" aria-label="Open bag" data-bs-toggle="offcanvas" data-bs-target="#cartPanel">♧ <span class="bag-count" id="bagCount">0</span></button></div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow light">THE ART OF A LASTING IMPRESSION</div>
+        <h1>Find the scent<br><em>that stays.</em></h1>
+        <p>A considered collection of luxury and niche fragrances for people who make every detail count.</p>
+        <a class="btn btn-oru-light" href="#shop">Explore the collection <span>↗</span></a>
+        <div class="hero-index"><span>01</span><i></i> DISCOVER YOUR SIGNATURE</div>
+      </div>
+      <div class="hero-image" role="img" aria-label="Luxury perfume bottle in warm sculptural light"></div>
+      <div class="hero-side-note">RARE SCENTS. REAL BOTTLES.</div>
+    </section>
+
+    <section class="trust-strip container-xl">
+      <div><span class="trust-icon">✳</span><span><b>Authenticity first</b><small>Carefully sourced fragrances</small></span></div>
+      <div><span class="trust-icon">◈</span><span><b>Considered curation</b><small>Distinctive houses and scents</small></span></div>
+      <div><span class="trust-icon">⌁</span><span><b>Nationwide delivery</b><small>Thoughtful, secure packaging</small></span></div>
+      <div><span class="trust-icon">♡</span><span><b>Personal guidance</b><small>Help finding your next scent</small></span></div>
+    </section>
+
+    <section class="section-pad container-xl" id="shop">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE ORU EDIT</div><h2>Scents worth <em>remembering.</em></h2></div>
+        <a href="#shop" class="text-link">VIEW ALL FRAGRANCES ↗</a>
+      </div>
+      <div class="shop-toolbar">
+        <div class="filter-row button-group" id="filters">
+          <button class="filter-btn is-checked" data-filter="*">All scents</button>
+          <button class="filter-btn" data-filter=".woody">Woody</button>
+          <button class="filter-btn" data-filter=".floral">Floral</button>
+          <button class="filter-btn" data-filter=".amber">Amber</button>
+          <button class="filter-btn" data-filter=".fresh">Fresh</button>
+        </div>
+        <div class="shop-tools"><input id="shopSearch" type="search" placeholder="Search the collection…" aria-label="Search fragrances"><select id="sortSelect" aria-label="Sort products"><option value="original-order">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option></select></div>
+      </div>
+      <div class="row g-4 product-grid" id="productGrid">
+        <div class="col-6 col-lg-3 product-item woody" data-price="185000" data-name="Santal No. 04">
+          <article class="product-card"><div class="product-image"><img onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80'" src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=85" alt="Amber perfume bottle"><span class="product-tag">ORU SELECT</span><button class="quick-view" onclick="showProduct(0)">QUICK VIEW ↗</button></div><div class="product-meta"><span>MAISON VERANE</span><button onclick="toggleWish(this)" aria-label="Add to wishlist">♡</button></div><h3>Santal No. 04</h3><div class="product-bottom"><span>50ml · Eau de Parfum</span><b>₦185,000</b></div><button class="add-link" onclick="addToBag(0)">ADD TO BAG +</button></article>
+        </div>
+        <div class="col-6 col-lg-3 product-item floral" data-price="220000" data-name="Petale de Minuit">
+          <article class="product-card"><div class="product-image"><img onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80'" src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=85" alt="Minimal perfume bottle"><span class="product-tag">NEW ARRIVAL</span><button class="quick-view" onclick="showProduct(1)">QUICK VIEW ↗</button></div><div class="product-meta"><span>CASA AMBRA</span><button onclick="toggleWish(this)" aria-label="Add to wishlist">♡</button></div><h3>Pétale de Minuit</h3><div class="product-bottom"><span>75ml · Eau de Parfum</span><b>₦220,000</b></div><button class="add-link" onclick="addToBag(1)">ADD TO BAG +</button></article>
+        </div>
+        <div class="col-6 col-lg-3 product-item amber" data-price="265000" data-name="Oud Velours">
+          <article class="product-card"><div class="product-image"><img onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80'" src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=900&q=85" alt="Dark glass fragrance bottle"><span class="product-tag">NICHE FIND</span><button class="quick-view" onclick="showProduct(2)">QUICK VIEW ↗</button></div><div class="product-meta"><span>ATELIER DUNE</span><button onclick="toggleWish(this)" aria-label="Add to wishlist">♡</button></div><h3>Oud Velours</h3><div class="product-bottom"><span>100ml · Eau de Parfum</span><b>₦265,000</b></div><button class="add-link" onclick="addToBag(2)">ADD TO BAG +</button></article>
+        </div>
+        <div class="col-6 col-lg-3 product-item fresh" data-price="155000" data-name="Verde d'Été">
+          <article class="product-card"><div class="product-image"><img onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80'" src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=85" alt="Perfume bottle in soft light"><span class="product-tag">EVERYDAY ICON</span><button class="quick-view" onclick="showProduct(3)">QUICK VIEW ↗</button></div><div class="product-meta"><span>MAISON VERANE</span><button onclick="toggleWish(this)" aria-label="Add to wishlist">♡</button></div><h3>Verde d'Été</h3><div class="product-bottom"><span>50ml · Eau de Toilette</span><b>₦155,000</b></div><button class="add-link" onclick="addToBag(3)">ADD TO BAG +</button></article>
+        </div>
+        <div class="col-6 col-lg-3 product-item woody" data-price="295000" data-name="Bois de Sable">
+          <article class="product-card"><div class="product-image"><img onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80'" src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=900&q=85" alt="Luxury fragrance still life"><span class="product-tag">LIMITED EDIT</span><button class="quick-view" onclick="showProduct(4)">QUICK VIEW ↗</button></div><div class="product-meta"><span>ATELIER DUNE</span><button onclick="toggleWish(this)" aria-label="Add to wishlist">♡</button></div><h3>Bois de Sable</h3><div class="product-bottom"><span>100ml · Extrait</span><b>₦295,000</b></div><button class="add-link" onclick="addToBag(4)">ADD TO BAG +</button></article>
+        </div>
+        <div class="col-6 col-lg-3 product-item floral" data-price="198000" data-name="Rose Noire">
+          <article class="product-card"><div class="product-image"><img onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80'" src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=85" alt="Rose-toned perfume bottle"><span class="product-tag">SOFT FLORAL</span><button class="quick-view" onclick="showProduct(5)">QUICK VIEW ↗</button></div><div class="product-meta"><span>CASA AMBRA</span><button onclick="toggleWish(this)" aria-label="Add to wishlist">♡</button></div><h3>Rose Noire</h3><div class="product-bottom"><span>50ml · Eau de Parfum</span><b>₦198,000</b></div><button class="add-link" onclick="addToBag(5)">ADD TO BAG +</button></article>
+        </div>
+        <div class="col-6 col-lg-3 product-item amber" data-price="245000" data-name="Ambre Serein">
+          <article class="product-card"><div class="product-image"><img onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80'" src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=900&q=85" alt="Amber coloured perfume"><span class="product-tag">WARM & SPICED</span><button class="quick-view" onclick="showProduct(6)">QUICK VIEW ↗</button></div><div class="product-meta"><span>MAISON VERANE</span><button onclick="toggleWish(this)" aria-label="Add to wishlist">♡</button></div><h3>Ambre Serein</h3><div class="product-bottom"><span>75ml · Eau de Parfum</span><b>₦245,000</b></div><button class="add-link" onclick="addToBag(6)">ADD TO BAG +</button></article>
+        </div>
+        <div class="col-6 col-lg-3 product-item fresh" data-price="175000" data-name="Citrus Archive">
+          <article class="product-card"><div class="product-image"><img onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80'" src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=900&q=85" alt="Clear glass fragrance bottle"><span class="product-tag">FRESH CITRUS</span><button class="quick-view" onclick="showProduct(7)">QUICK VIEW ↗</button></div><div class="product-meta"><span>CASA AMBRA</span><button onclick="toggleWish(this)" aria-label="Add to wishlist">♡</button></div><h3>Citrus Archive</h3><div class="product-bottom"><span>50ml · Eau de Parfum</span><b>₦175,000</b></div><button class="add-link" onclick="addToBag(7)">ADD TO BAG +</button></article>
+        </div>
+      </div>
+      <div class="text-center mt-5"><button class="btn btn-outline-oru" onclick="document.getElementById('shopSearch').value='';document.getElementById('shopSearch').dispatchEvent(new Event('input'));document.querySelector('[data-filter=\"*\"]').click()">VIEW THE FULL EDIT <span>↗</span></button></div>
+    </section>
+
+    <section class="house-section" id="houses">
+      <div class="container-xl house-layout">
+        <div class="house-copy"><div class="eyebrow light">A WORLD OF FRAGRANCE</div><h2>Independent spirit.<br><em>Distinctive houses.</em></h2><p>Explore a thoughtful mix of established signatures and emerging scent stories. Every fragrance in the edit is chosen for its character, craft and point of view.</p><a href="brands.html" class="btn btn-oru-light">Explore fragrance houses ↗</a></div>
+        <div class="house-tiles"><div class="house-tile tile-one"><span>01 / THE MODERN CLASSIC</span><b>MAISON<br>VERANE</b></div><div class="house-tile tile-two"><span>02 / THE ROMANTIC</span><b>CASA<br>AMBRA</b></div><div class="house-tile tile-three"><span>03 / THE ARTISAN</span><b>ATELIER<br>DUNE</b></div></div>
+      </div>
+    </section>
+
+    <section class="editorial section-pad container-xl" id="story">
+      <div class="editorial-image"><img onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80'" src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1200&q=85" alt="Perfume bottle and botanical materials"></div>
+      <div class="editorial-copy"><div class="eyebrow">THE ORU STANDARD</div><h2>Beautiful fragrance.<br><em>Nothing less than real.</em></h2><p>Fragrance is personal. Confidence in what you purchase should never be a question. Oru is built around careful curation, transparent product information and a considered buying experience.</p><ul class="standard-list"><li><span>01</span> Clear product and concentration details</li><li><span>02</span> Careful packaging and handling</li><li><span>03</span> Authenticity checks as part of sourcing</li></ul><a href="about.html" class="text-link">LEARN ABOUT OUR STANDARD ↗</a></div>
+    </section>
+
+    <section class="quote-band"><div class="eyebrow light">A NOTE ON DISCOVERY</div><p>“A fragrance is the quietest way<br>to leave a lasting impression.”</p><span>THE ORU POINT OF VIEW</span></section>
+
+    <section class="journal-section section-pad container-xl" id="journal">
+      <div class="section-heading"><div><div class="eyebrow">NOTES & DISCOVERIES</div><h2>The fragrance <em>journal.</em></h2></div><a href="journal.html" class="text-link">MORE STORIES ↗</a></div>
+      <div class="swiper oru-journal-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><article class="journal-card"><img onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80'" src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=900&q=85" alt="Fragrance ingredients"><div class="eyebrow">SCENT NOTES · 5 MIN READ</div><h3>Understanding the architecture of a fragrance</h3><a href="article.html?slug=fragrance-architecture">READ STORY ↗</a></article></div>
+          <div class="swiper-slide"><article class="journal-card"><img onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80'" src="https://images.unsplash.com/photo-1608528577891-eb055944f2e7?auto=format&fit=crop&w=900&q=85" alt="Perfume bottles"><div class="eyebrow">THE EDIT · 4 MIN READ</div><h3>How to choose a signature scent</h3><a href="article.html?slug=choose-signature-scent">READ STORY ↗</a></article></div>
+          <div class="swiper-slide"><article class="journal-card"><img onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80'" src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=900&q=85" alt="Sculptural perfume display"><div class="eyebrow">CARE GUIDE · 3 MIN READ</div><h3>Keeping your fragrance at its best</h3><a href="article.html?slug=keep-fragrance-at-its-best">READ STORY ↗</a></article></div>
+        </div><div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="newsletter-section" id="contact"><div class="container-xl newsletter-inner"><div><div class="eyebrow light">THE ORU LETTER</div><h2>A little more <em>olfactory.</em></h2><p>New discoveries, considered edits and notes from the world of fragrance.</p></div><form id="newsletterForm" class="newsletter-form"><label for="emailInput">YOUR EMAIL ADDRESS</label><div><input id="emailInput" type="email" placeholder="Email address" required><button type="submit">SUBSCRIBE ↗</button></div><small id="formMessage">By subscribing, you agree to receive occasional updates from Oru.</small></form></div></section>
+  </main>
+  <section class="contact-mini container-xl">
+    <div><div class="eyebrow">A PERSONAL RECOMMENDATION</div><h2>Looking for <em>something specific?</em></h2><p>Tell us what you love and the Oru team can help you narrow the search. This form is a front-end demo only.</p></div>
+    <form id="contactForm" class="contact-form"><input type="text" placeholder="Your name" aria-label="Your name" required><input type="email" placeholder="Email address" aria-label="Email address" required><textarea rows="3" placeholder="Tell us about the scent you're looking for" aria-label="Your message" required></textarea><button type="submit" class="btn btn-oru-dark">SEND ENQUIRY ↗</button><small id="contactMessage">No message is sent from this prototype.</small></form>
+  </section>
+  <footer class="footer"><div class="container-xl"><div class="footer-top"><a class="navbar-brand footer-brand" href="#"><span class="brand-mark">ORU</span><small>PERFUMES</small></a><p>Rare scents. Real bottles.</p><div class="footer-links"><a href="#shop">Shop</a><a href="about.html">Our standard</a><a href="journal.html">Journal</a><a href="faq.html">FAQ</a><a href="account.html">My account</a><a href="contact.html">Contact</a><a href="admin.html">Seller demo</a></div></div><div class="footer-bottom"><span>© 2026 ORU PERFUMES · DEMO STOREFRONT</span><span><a href="privacy.html">PRIVACY</a> · <a href="returns.html">DELIVERY &amp; RETURNS</a> · <a href="terms.html">TERMS</a></span><span>IMAGERY: UNSPLASH</span></div><p class="demo-note">Case-study prototype. Product names, houses, prices, stock and policies are illustrative and must be verified before commercial use.</p></div></footer>
+
+  <div class="offcanvas offcanvas-end cart-panel" tabindex="-1" id="cartPanel"><div class="offcanvas-header"><h5>YOUR BAG <span id="cartQtyLabel">(0)</span></h5><button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button></div><div class="offcanvas-body"><div id="cartItems"><p class="empty-cart">Your bag is waiting for something exceptional.</p></div><div class="cart-total"><div><span>SUBTOTAL</span><b id="cartTotal">₦0</b></div><small>Delivery calculated at checkout.</small><a class="btn btn-oru-dark w-100" href="cart.html">VIEW BAG &amp; CHECKOUT ↗</a></div></div></div>
+
+  <div class="modal fade" id="productModal" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content product-modal"><button type="button" class="btn-close modal-close" data-bs-dismiss="modal"></button><div class="row g-0"><div class="col-md-6"><img id="modalImage" src="" alt="Selected fragrance"></div><div class="col-md-6 modal-product-copy"><div class="eyebrow" id="modalHouse"></div><h2 id="modalName"></h2><p id="modalDesc">A considered fragrance from the Oru edit.</p><div class="modal-price" id="modalPrice"></div><p class="modal-detail">SIZE <b id="modalSize"></b></p><p class="modal-detail">CONCENTRATION <b id="modalConcentration"></b></p><button class="btn btn-oru-dark w-100" id="modalAdd">ADD TO BAG +</button><a class="modal-more" id="modalMore" href="product.html">VIEW FULL DETAILS ↗</a><small class="modal-demo">Illustrative product information for case-study use.</small></div></div></div></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="shared.js"></script>
+  <script src="app.js"></script>
+</body></html>
